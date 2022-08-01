@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/container-row-col.css">
+    <title>.container .row .col</title>
+</head>
+<body>
+    use of .col and .w-100
+    <div class="container">
+        <div class="row">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            
+            <div class="w-100"></div>
+            <!-- .w-100 class is used to give a break of the columns. col 3 will start from next line  -->
+
+            <div class="col">col 3</div>
+            <div class="col">col 4</div>
+
+            <div class="w-100"></div>
+
+            <div class="col">col 5</div>
+        </div>
+
+        <div class="row">row 2</div>
+        <div class="row">row 3</div>
+
+        <!-- Direct child of the .container will be .row and direct child of .row will be .col ||  whole width of a row will be 
+        devided among all the .col div-->
+    </div>
+    <br><br><br>
+
+    <!-- if I want to add some spacial no. of columns in a row then I have to use .row-cols-n  class (n = 1, 2, 3, 4....) -->
+    use of .row-cols-n
+    <div class="container">
+        <div class="row row-cols-3">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+            <div class="col">col 4</div>
+            <div class="col">col 5</div>
+            <div class="col">col 6</div>
+            <div class="col">col 7</div>
+            <div class="col">col 8</div>
+            <div class="col">col 9</div>
+            <div class="col">col 10</div>
+            <div class="col">col 11</div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- If I want that the row will devide in the equal parts for more than specific width -->
+    <!-- Extra large - xl
+        large - lg
+        medium - md
+        small - sm
+        very small - No any shortform
+
+    If I use col-md then medium, large and extra large devides will contain all the columns in the same row devided in the same 
+    width and for the small and extra small devides the width for the columns will be 100% width of the devide. -->
+    use of .col-md/ .col-lg/ .col-xl
+    <div class="container">
+        <div class="row">
+            <div class="col-md">col 1</div>
+            <div class="col-md">col 2</div>
+            <div class="col-md">col 3</div>
+            <div class="col-md">col 4</div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- If we want to devide the roow in the different size of the columns the will use col-n (n = 1, 2, 3,....., 11, 12)
+    The sum of all the columns shold be 12 -->
+    use of .col-1/2/.../12
+    <div class="container">
+        <div class="row">
+            <div class="col-8">col-8</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
+
+
+    <!-- If we want that our row will devide in the 8 and 4 cols for the medium and large and extra large devides but 
+        when it comes to the small devides it will go to the 100% of the width 
+        .col-md/lg/xl-n    where n = (1,2,3 ...., 11, 12)-->
+
+    use of .col-md-n 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">col-md-8</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+    </div>
+</body>
+</html >
